@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){//callback
+	$("button").click(function(){
+		$("#p1").css("color","red").slideUp(2000).slideDown(2000);
+		});
+	}); 
+
+
+</script>
+</head>
+<body>
+
+<p id="p1">jQuery</p>
+
+<button>Hide</button>
+
+</body>
+</html>

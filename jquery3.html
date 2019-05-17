@@ -1,0 +1,36 @@
+<html>
+<head>
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){//callback
+	$("button").click(function(){
+		$("#div1").fadeIn();
+		$("#div2").fadeIn("slow");
+		$("#div3").fadeIn(3000);
+	});
+		$("button").click(function(){
+		$("#div1").fadeOut();
+		$("#div2").fadeOut("slow");
+		$("#div3").fadeOut(30);
+	});
+	$("button").click(function(){
+		$("#div1").fadeToggle();
+		$("#div2").fadeToggle("slow");
+		$("#div3").fadeToggle(30);
+}); 
+});
+</script>
+</head>
+<body>
+<p>Demonstration de fade</p>
+
+<button>Cliquez ici</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div><br>
+
+</body>
+</html>

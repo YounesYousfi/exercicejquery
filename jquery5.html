@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){//callback
+	$("button").click(function(){
+		$("div").animate({left:'50px'});
+		$("div").animate({bottom:'50px'});
+		$("div").animate({right:'50px'});
+		$("div").animate({top:'50px'});
+	});
+}); 
+
+</script>
+
+</head>
+<body>
+<button>Commencer l'animation</button>
+<p>Formation inti</p>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div><br>
+<div id="panel">Hello world</div><br>
+
+</body>
+</html>
